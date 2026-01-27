@@ -9,6 +9,7 @@ import Student from './Student';
 import User_Info from './User_Info.jsx';
 import MyFunction from './MyFunction';
 import PropsDemo from './PropsDemo';
+import Mountphase from './Mountphase'; 
 
 
 
@@ -26,6 +27,7 @@ function App() {
       <User_Info></User_Info>
       <MyFunction></MyFunction>
       <PropsDemo name="Avishkar" age="21"></PropsDemo>
+      <Mountphase></Mountphase>
     </div>
   );
 }
