@@ -15,9 +15,6 @@ import ComponentDidUpdate from './ComponentDidUpdate.jsx';
 import { Component, useState } from 'react';
 import ComponentWillUnmount from './ComponentWillUnmount';
 
-
-
-
 function App() {
 
   let [isvisible,setisvisible]=useState(true)
@@ -37,12 +34,13 @@ function App() {
       <Mountphase></Mountphase>
       <ShouldComponentUpdateExample></ShouldComponentUpdateExample>
       <ComponentDidUpdate></ComponentDidUpdate>
-      <ComponentWillUnmount></ComponentWillUnmount>
+      {/* <ComponentWillUnmount></ComponentWillUnmount> */}
       {
         isvisible?
         <ComponentWillUnmount></ComponentWillUnmount>:null
       }
-      <button onClick={()=>{setisvisible(false)}}>update isvisible</button>
+      <button onClick={()=>{setisvisible(false)}}>update isvisible</button><br></br>
+      enter city :<input type="text"></input>
     </div>
   );
 }
