@@ -33,6 +33,8 @@ export default class Mountphase extends Component {
         
         <h1>--------------Event Handling----------------</h1>
         Enter name: <input type="text" />
+
+        Enter age: <input type="number"></input>
         
       </div>
     )

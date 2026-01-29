@@ -10,11 +10,18 @@ import User_Info from './User_Info.jsx';
 import MyFunction from './MyFunction';
 import PropsDemo from './PropsDemo';
 import Mountphase from './Mountphase'; 
+import ShouldComponentUpdateExample from './ShouldComponentUpdateExample.jsx';
+import ComponentDidUpdate from './ComponentDidUpdate.jsx';
+import { Component, useState } from 'react';
+import ComponentWillUnmount from './ComponentWillUnmount';
 
 
 
 
 function App() {
+
+  let [isvisible,setisvisible]=useState(true)
+
   return (
     <div>
       <h1>Main Class</h1>
@@ -28,6 +35,14 @@ function App() {
       <MyFunction></MyFunction>
       <PropsDemo name="Avishkar" age="21"></PropsDemo>
       <Mountphase></Mountphase>
+      <ShouldComponentUpdateExample></ShouldComponentUpdateExample>
+      <ComponentDidUpdate></ComponentDidUpdate>
+      <ComponentWillUnmount></ComponentWillUnmount>
+      {
+        isvisible?
+        <ComponentWillUnmount></ComponentWillUnmount>:null
+      }
+      <button onClick={()=>{setisvisible(false)}}>update isvisible</button>
     </div>
   );
 }
