@@ -17,6 +17,7 @@ import ComponentWillUnmount from './ComponentWillUnmount';
 import UseEffectMount from './UseEffectMount.jsx';
 import UseEffectUpdate from './UseEffectUpdate.jsx';
 import DependenciesArray from './DependenciesArray.jsx';
+import UseEffectUnmount from './UseEffectUnmount.jsx';
 
 function App() {
 
@@ -47,6 +48,8 @@ function App() {
       <UseEffectMount></UseEffectMount>
       <UseEffectUpdate></UseEffectUpdate>
       <DependenciesArray></DependenciesArray>
+      {isvisible?<UseEffectUnmount></UseEffectUnmount>:null}
+      <button onClick={()=>{setisvisible(false)}}>click here to set invisible</button>
     </div>
   );
 }
