@@ -7,7 +7,7 @@ export default function DependenciesArray() {
 
     useEffect(()=>{
         console.log("this method called when value of any variable is updated!!")
-    },[counter])
+    },[])
 
   return (
     <div>
