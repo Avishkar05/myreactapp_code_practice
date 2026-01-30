@@ -15,6 +15,7 @@ import ComponentDidUpdate from './ComponentDidUpdate.jsx';
 import { Component, useState } from 'react';
 import ComponentWillUnmount from './ComponentWillUnmount';
 import UseEffectMount from './UseEffectMount.jsx';
+import UseEffectUpdate from './UseEffectUpdate.jsx';
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
       <button onClick={()=>{setisvisible(false)}}>update isvisible</button><br></br>
       enter city :<input type="text"></input>
       <UseEffectMount></UseEffectMount>
+      <UseEffectUpdate></UseEffectUpdate>
     </div>
   );
 }
