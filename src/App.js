@@ -18,6 +18,7 @@ import UseEffectMount from './UseEffectMount.jsx';
 import UseEffectUpdate from './UseEffectUpdate.jsx';
 import DependenciesArray from './DependenciesArray.jsx';
 import UseEffectUnmount from './UseEffectUnmount.jsx';
+import FormHandling from './FormHandling.jsx';
 
 function App() {
 
@@ -45,11 +46,12 @@ function App() {
       } */}
       <button onClick={()=>{setisvisible(false)}}>update isvisible</button><br></br>
       enter city :<input type="text"></input>
-      <UseEffectMount></UseEffectMount>
-      <UseEffectUpdate></UseEffectUpdate>
-      <DependenciesArray></DependenciesArray>
-      {isvisible?<UseEffectUnmount></UseEffectUnmount>:null}
-      <button onClick={()=>{setisvisible(false)}}>click here to set invisible</button>
+      {/* <UseEffectMount></UseEffectMount> */}
+      {/* <UseEffectUpdate></UseEffectUpdate> */}
+      {/* <DependenciesArray></DependenciesArray> */}
+      {/* {isvisible?<UseEffectUnmount></UseEffectUnmount>:null}
+      <button onClick={()=>{setisvisible(false)}}>click here to set invisible</button> */}
+      <FormHandling></FormHandling>
     </div>
   );
 }
