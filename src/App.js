@@ -16,6 +16,7 @@ import { Component, useState } from 'react';
 import ComponentWillUnmount from './ComponentWillUnmount';
 import UseEffectMount from './UseEffectMount.jsx';
 import UseEffectUpdate from './UseEffectUpdate.jsx';
+import DependenciesArray from './DependenciesArray.jsx';
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
       enter city :<input type="text"></input>
       <UseEffectMount></UseEffectMount>
       <UseEffectUpdate></UseEffectUpdate>
+      <DependenciesArray></DependenciesArray>
     </div>
   );
 }
