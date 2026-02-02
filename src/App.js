@@ -19,6 +19,7 @@ import UseEffectUpdate from './UseEffectUpdate.jsx';
 import DependenciesArray from './DependenciesArray.jsx';
 import UseEffectUnmount from './UseEffectUnmount.jsx';
 import FormHandling from './FormHandling.jsx';
+import FormValidition from './FormValidition.jsx';
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
       {/* {isvisible?<UseEffectUnmount></UseEffectUnmount>:null}
       <button onClick={()=>{setisvisible(false)}}>click here to set invisible</button> */}
       <FormHandling></FormHandling>
+      <FormValidition></FormValidition>
     </div>
   );
 }
