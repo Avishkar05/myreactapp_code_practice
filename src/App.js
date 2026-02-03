@@ -27,32 +27,32 @@ function App() {
 
   return (
     <div>
-      <h1>Main Class</h1>
-      <MyClass></MyClass>
-      <Myinfo></Myinfo>
+      {/* <h1>Main Class</h1> */}
+      {/* <MyClass></MyClass> */}
+      {/* <Myinfo></Myinfo>
       <Variable></Variable>
       <State></State>
       <SetstateExample></SetstateExample>
       <Student name="Avishkar" course="Java" age="21" email="avishkar@gmail.com"></Student>
       <User_Info></User_Info>
       <MyFunction></MyFunction>
-      <PropsDemo name="Avishkar" age="21"></PropsDemo>
+      <PropsDemo name="Avishkar" age="21"></PropsDemo> */}
       {/* <Mountphase></Mountphase> */}
-      <ShouldComponentUpdateExample></ShouldComponentUpdateExample>
-      <ComponentDidUpdate></ComponentDidUpdate>
+      {/* <ShouldComponentUpdateExample></ShouldComponentUpdateExample> */}
+      {/* <ComponentDidUpdate></ComponentDidUpdate> */}
       {/* <ComponentWillUnmount></ComponentWillUnmount> */}
       {/* {
         isvisible?
         <ComponentWillUnmount></ComponentWillUnmount>:null
       } */}
-      <button onClick={()=>{setisvisible(false)}}>update isvisible</button><br></br>
-      enter city :<input type="text"></input>
+      {/* <button onClick={()=>{setisvisible(false)}}>update isvisible</button><br></br>
+      enter city :<input type="text"></input> */}
       {/* <UseEffectMount></UseEffectMount> */}
       {/* <UseEffectUpdate></UseEffectUpdate> */}
       {/* <DependenciesArray></DependenciesArray> */}
       {/* {isvisible?<UseEffectUnmount></UseEffectUnmount>:null}
       <button onClick={()=>{setisvisible(false)}}>click here to set invisible</button> */}
-      <FormHandling></FormHandling>
+      {/* <FormHandling></FormHandling> */}
       <FormValidition></FormValidition>
     </div>
   );
