@@ -1,6 +1,7 @@
-*{
+/* *{
   text-align: center;
-}
+} */
+
 
 .App {
   text-align: center;
@@ -39,4 +40,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* Custom Style */
+nav{
+  background-color: #61dafb;
+  height: 50px;
+}
+
+nav ul{
+  display: flex;
+  gap: 35px;
+  list-style-type: none;
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-link{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-link:hover{
+  color: chartreuse;
+  font-size: 40px;
 }

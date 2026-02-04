@@ -24,6 +24,7 @@ import Home from './Home.jsx';
 import Aboutus from './Aboutus.jsx';
 import Contactus from './Contactus.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar.jsx';
 
 function App() {
 
@@ -59,6 +60,7 @@ function App() {
       {/* <FormHandling></FormHandling> */}
       {/* <FormValidition></FormValidition> */}
       <BrowserRouter>
+      <Navbar></Navbar>
         <Routes>
           <Route path='/home' element={<Home></Home>}></Route>
           <Route path='/about' element={<Aboutus></Aboutus>}></Route>
