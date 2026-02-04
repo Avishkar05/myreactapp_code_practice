@@ -20,6 +20,10 @@ import DependenciesArray from './DependenciesArray.jsx';
 import UseEffectUnmount from './UseEffectUnmount.jsx';
 import FormHandling from './FormHandling.jsx';
 import FormValidition from './FormValidition.jsx';
+import Home from './Home.jsx';
+import Aboutus from './Aboutus.jsx';
+import Contactus from './Contactus.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
@@ -27,7 +31,7 @@ function App() {
 
   return (
     <div>
-      {/* <h1>Main Class</h1> */}
+      <h1>Main Class</h1>
       {/* <MyClass></MyClass> */}
       {/* <Myinfo></Myinfo>
       <Variable></Variable>
@@ -53,8 +57,15 @@ function App() {
       {/* {isvisible?<UseEffectUnmount></UseEffectUnmount>:null}
       <button onClick={()=>{setisvisible(false)}}>click here to set invisible</button> */}
       {/* <FormHandling></FormHandling> */}
-      <FormValidition></FormValidition>
-    </div>
+      {/* <FormValidition></FormValidition> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/home' element={<Home></Home>}></Route>
+          <Route path='/about' element={<Aboutus></Aboutus>}></Route>
+          <Route path='/contact' element={<Contactus></Contactus>}></Route>
+        </Routes>
+      </BrowserRouter> 
+    </div> 
   );
 }
 
