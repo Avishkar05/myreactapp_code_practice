@@ -25,6 +25,8 @@ import Aboutus from './Aboutus.jsx';
 import Contactus from './Contactus.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar.jsx';
+import Table from './Table.jsx';
+
 
 function App() {
 
@@ -68,6 +70,8 @@ function App() {
           <Route path='/*' element={<h1>404 Page not found</h1>}></Route>
         </Routes>
       </BrowserRouter> 
+      <Table></Table>
+
     </div> 
   );
 }
