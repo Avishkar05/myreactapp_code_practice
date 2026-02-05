@@ -26,6 +26,9 @@ import Contactus from './Contactus.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar.jsx';
 import Table from './Table.jsx';
+import Form from './Form.jsx';
+import Register from './Register.jsx';
+import ModalExample from './ModalExample.jsx';
 
 
 function App() {
@@ -61,16 +64,24 @@ function App() {
       <button onClick={()=>{setisvisible(false)}}>click here to set invisible</button> */}
       {/* <FormHandling></FormHandling> */}
       {/* <FormValidition></FormValidition> */}
+      <Table></Table>
       <BrowserRouter>
       <Navbar></Navbar>
+      {/* <Form></Form> */}
         <Routes>
           <Route path='/home' element={<Home></Home>}></Route>
           <Route path='/about' element={<Aboutus></Aboutus>}></Route>
           <Route path='/contact' element={<Contactus></Contactus>}></Route>
           <Route path='/*' element={<h1>404 Page not found</h1>}></Route>
+          
+          {/* <Route path='/Register' element={<Register></Register>}></Route> */}
         </Routes>
       </BrowserRouter> 
-      <Table></Table>
+      
+      <Form></Form>
+      <ModalExample></ModalExample>
+      
+
 
     </div> 
   );
