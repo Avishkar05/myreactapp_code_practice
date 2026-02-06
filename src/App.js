@@ -29,6 +29,7 @@ import Table from './Table.jsx';
 import Form from './Form.jsx';
 import Register from './Register.jsx';
 import ModalExample from './ModalExample.jsx';
+import Breakpoint from './Breakpoint.jsx';
 
 
 function App() {
@@ -80,6 +81,7 @@ function App() {
       
       <Form></Form>
       <ModalExample></ModalExample>
+      <Breakpoint></Breakpoint>
       
 
 
