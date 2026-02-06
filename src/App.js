@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div>
-      <h1>Main Class</h1>
+      {/* <h1>Main Class</h1> */}
       {/* <MyClass></MyClass> */}
       {/* <Myinfo></Myinfo>
       <Variable></Variable>
@@ -65,22 +65,23 @@ function App() {
       <button onClick={()=>{setisvisible(false)}}>click here to set invisible</button> */}
       {/* <FormHandling></FormHandling> */}
       {/* <FormValidition></FormValidition> */}
-      <Table></Table>
+      {/* <Table></Table> */}
+      
       <BrowserRouter>
-      <Navbar></Navbar>
-      {/* <Form></Form> */}
+        <Navbar></Navbar>
+        <Form></Form>
         <Routes>
           <Route path='/home' element={<Home></Home>}></Route>
           <Route path='/about' element={<Aboutus></Aboutus>}></Route>
           <Route path='/contact' element={<Contactus></Contactus>}></Route>
           <Route path='/*' element={<h1>404 Page not found</h1>}></Route>
           
-          {/* <Route path='/Register' element={<Register></Register>}></Route> */}
+          <Route path='/Register' element={<Register></Register>}></Route>
         </Routes>
       </BrowserRouter> 
       
-      <Form></Form>
-      <ModalExample></ModalExample>
+      {/* <Form></Form>
+      <ModalExample></ModalExample> */}
       <Breakpoint></Breakpoint>
       
 
